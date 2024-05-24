@@ -1,0 +1,813 @@
+@media screen and (max-width: 1200px) {
+    .nav-item {
+        margin: 0 8px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .start:after {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 73%);
+    }
+
+    .video-img {
+        object-fit: cover;
+    }
+
+    .parent {
+        display: grid;
+    }
+
+    .desc-lands {
+        display: none;
+    }
+
+
+    .investment-item-map img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+    .start-info .col-lg-3 {
+        padding: 30px;
+    }
+
+    .start-info .col-lg-3:nth-child(1) {
+        padding: 30px;
+    }
+
+    .start-info .col-lg-3:nth-child(4) {
+        padding: 30px;
+    }
+
+    .start-titles {
+        transform: translateY(-25px);
+        padding-top: 80px;
+    }
+
+    .start img {
+        object-fit: cover;
+    }
+
+    h1.large {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 63px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 57px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 33px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 21px;
+
+    }
+
+    .contacts-info {
+        flex-direction: column-reverse;
+    }
+
+
+    iframe {
+        height: 375px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .lands-img-left {
+        display: none;
+    }
+
+    .start-titles-with-btn {
+        display: block;
+        align-items: center
+    }
+
+    .ml-3 {
+        margin-left: 0;
+    }
+
+    .text-center {
+        text-align: start !important;
+    }
+
+    .investment-item-5 {
+        border-right: 1px solid rgba(209, 79, 21, 20%);
+    }
+
+    .investment-item-4 {
+        border-right: 1px solid rgba(209, 79, 21, 20%);
+        border-bottom: none;
+    }
+
+    .investment-item-3 {
+        border-right: none;
+    }
+
+    .investment-item-2 {
+        border-right: 1px solid rgba(209, 79, 21, 20%);
+    }
+
+    .plan-item img {
+
+    }
+
+    .ds-4 {
+        z-index: 5;
+        position: relative;
+        transform: translateY(-158%);
+    }
+
+    .ds-5 {
+        z-index: 6;
+        position: relative;
+        transform: translateY(-170%);
+    }
+
+    .ds-6 {
+        z-index: 8;
+        position: relative;
+        transform: translateY(-94%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .pan-text {
+        bottom: 30px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .investment-container {
+        margin-bottom: 20px;
+    }
+
+    .title-container p {
+        margin-top: 10px;
+    }
+
+    .instagram-slider {
+        margin-top: 32px;
+    }
+
+    .instagram h2 {
+        margin-bottom: 20px;
+    }
+
+    .social-programs-img img {
+        margin: 0 0 20px 0;
+    }
+
+    .highlights-item {
+        margin: 0 12px 0 0;
+    }
+
+    .pan-deck {
+        display: none;
+    }
+
+    .container-pan {
+        display: grid;
+    }
+
+    .container-kedr {
+        display: grid;
+    }
+
+    .kedr-deck {
+        display: none;
+    }
+
+    .rules p {
+        margin-top: 16px;
+    }
+
+    .plan-item a img {
+
+    }
+
+    .accordion-body {
+        padding: 0;
+    }
+
+    .contacts-item-info-altai h4 {
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
+
+    .accordion-header .accordion-button {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 25.2px;
+        text-align: left;
+    }
+
+    .contacts a {
+        margin-bottom: 0;
+    }
+
+    .contacts-item-info-moscow-address {
+        margin-bottom: 12px;
+    }
+
+    .contacts-item-map {
+        margin-right: 0;
+    }
+
+    .contacts > p, a {
+        font-family: Inter, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+        text-align: left;
+    }
+
+    .contacts-item-info-moscow h4 {
+        margin-bottom: 24px;
+        font-weight: 400;
+    }
+
+    .contacts-item-info-moscow-telephones {
+        margin-bottom: 24px;
+    }
+
+    .investment-item {
+        padding: 20px 14px;
+    }
+
+    .investment-item img {
+        margin-bottom: 16px;
+    }
+
+    .rules-item img {
+        margin-bottom: 0;
+    }
+
+    .investment-item-map img {
+        max-width: 100%;
+    }
+
+    .infrastructure-item-title {
+        margin-bottom: 24px;
+        margin-left: 0;
+    }
+
+    .infrastructure-item img {
+        width: 100%
+    }
+
+    .investment-item-map img {
+        width: 100%;
+    }
+
+    .plan-item img {
+        min-height: auto;
+        height: 28px;
+    }
+
+    .investment-item-3 {
+        border-right: 1px solid rgba(209, 79, 21, 20%);
+    }
+
+    .investment-item-4 {
+        border-bottom: 1px solid rgba(209, 79, 21, 20%);
+        border-right: none;
+    }
+
+    .investment-item-2 {
+        border-right: none;
+    }
+
+    .contacts-info {
+        padding: 0;
+    }
+
+    .contacts {
+        padding: 40px 0;
+    }
+
+    .politic {
+        margin: 24px 0;
+    }
+
+    .contacts-bottom-info {
+        margin-top: 32px;
+        color: #F9F9F9;
+    }
+
+    .houses {
+        padding: 40px 0;
+    }
+
+    .desc-btn {
+        display: none;
+    }
+
+    .mobile-btn {
+        display: block;
+        margin-top: 32px;
+    }
+
+    .col-lg-4 .plan-item img {
+    }
+
+    .col-lg-8 .plan-item img {
+    }
+
+    .start-info .col-lg-3:nth-child(2):before {
+        display: none;
+    }
+
+    .start-info .col-lg-3:nth-child(1):before {
+        display: none;
+    }
+
+    .houses-container {
+        margin-bottom: 32px;
+    }
+
+    .houses {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .houses img {
+        display: block;
+        position: relative;
+    }
+
+    .infrastructure-item img {
+        margin: auto;
+    }
+
+    .start-info .col-lg-3:nth-child(1) {
+        border-top: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 20%);
+    }
+
+    .start-info .col-lg-3:nth-child(2) {
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 20%);
+    }
+
+    .start-info .col-lg-3:nth-child(3) {
+        border: 1px solid rgba(255, 255, 255, 20%);
+        border-bottom: none;
+        border-left: none;
+    }
+
+    .start-info .col-lg-3:nth-child(4) {
+        border: 1px solid rgba(255, 255, 255, 20%);
+        border-bottom: none;
+        border-right: none;
+    }
+
+    .start-titles {
+        margin-bottom: 99px;
+    }
+
+    .start-info .col-lg-3:nth-child(1) {
+        padding: 16px 10px;
+    }
+
+    .start-info .col-lg-3:nth-child(4) {
+        padding: 16px 10px;
+    }
+
+    .start-info .col-lg-3 {
+        padding: 16px 10px;
+    }
+
+    .start-info {
+        padding: 10px;
+    }
+
+    .news-modal {
+        padding: 92px 15px 42px;
+        width: calc(100% - 17px);
+        max-height: calc(100vh - 54px);
+    }
+
+
+    .modal-rules {
+        width: calc(100% - 17px);
+    }
+
+    .send-request {
+        margin-top: 15px;
+    }
+
+    .houses-container-item {
+        padding: 12px 10px;
+    }
+
+    .instagram-slider .fas.fa-arrow-left.slick-arrow {
+        display: none !important;
+    }
+
+    .instagram-slider .fas.fa-arrow-right.slick-arrow {
+        display: none !important;
+    }
+
+    .media-slider .fas.fa-arrow-left.slick-arrow {
+        display: none !important;
+    }
+
+    .media-slider .fas.fa-arrow-right.slick-arrow {
+        display: none !important;
+    }
+
+    .reviews-slider .fas.fa-arrow-left.slick-arrow {
+        display: none !important;
+    }
+
+    .reviews-slider .fas.fa-arrow-right.slick-arrow {
+        display: none !important;
+    }
+
+    .news-slider .fas.fa-arrow-left.slick-arrow {
+        display: none !important;
+    }
+
+    .news-slider .fas.fa-arrow-right.slick-arrow {
+        display: none !important;
+    }
+
+    .team-slider .fas.fa-arrow-left.slick-arrow {
+        display: none !important;
+    }
+
+    .team-slider .fas.fa-arrow-right.slick-arrow {
+        display: none !important;
+    }
+
+    .reviews {
+        padding: 20px;
+    }
+
+    section {
+        margin: 100px 0;
+    }
+
+    h1.large {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 63px;
+    }
+
+    h1 {
+        font-size: 56px;
+        line-height: 57px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 33px;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 21px;
+
+    }
+
+    .rules-item {
+        padding: 10px;
+    }
+
+    .send-request {
+        min-width: auto;
+    }
+
+    .image {
+        height: 55vh;
+    }
+
+    .advantages {
+        padding: 40px 0;
+    }
+
+    .contacts-item-info-moscow {
+        padding: 0 0 12px 12px;
+    }
+
+    .contacts-item-info-altai {
+        padding: 32px 0 12px 12px;
+    }
+
+    .offers-img {
+        margin-bottom: 24px;
+    }
+
+    .infrastructure-body {
+        flex-direction: column-reverse;
+    }
+
+    .infrastructure {
+        padding: 40px 0;
+    }
+
+    .social-programs-body {
+        flex-direction: column-reverse;
+    }
+
+    .infrastructure-item-link {
+        text-align: start;
+        margin-bottom: 32px;
+    }
+
+    .infrastructure-item img {
+        max-width: 100%;
+    }
+
+    .advantages .title-container {
+        display: block;
+    }
+
+    .send-request {
+        width: 100%;
+    }
+
+    .title-container {
+        display: block;
+    }
+
+    .image-second img {
+        height: auto;
+        width: 100%;
+    }
+
+    .contacts-bottom-info div p {
+        text-align: start;
+    }
+
+    iframe {
+        height: 292px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .title-container {
+        margin-bottom: 24px;
+    }
+
+    .lands-container {
+        margin-bottom: 30px;
+    }
+
+    .about-item-text {
+        margin-bottom: 10px;
+    }
+
+    .infrastructure-item-link {
+        width: auto;
+        align-items: center;
+    }
+
+    .infrastructure h2 {
+        margin-bottom: 30px;
+    }
+
+    .infrastructure-item button {
+        margin-top: 30px;
+    }
+
+    .ds-4 {
+        transform: translateY(-178%);
+    }
+
+    .ds-5 {
+        transform: translateY(-166%);
+    }
+
+    .ds-6 {
+        transform: translateY(-74%);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h1.large {
+        font-size: 47px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+
+    h1 {
+        font-size: 43px;
+        line-height: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 33px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 17px;
+        line-height: 21px;
+
+    }
+
+    .h1-mobile {
+        display: block;
+    }
+
+    .h1-desc {
+        display: none;
+    }
+
+    .start-dvij {
+        display: none;
+    }
+
+    .h1-mobile {
+        .send-request {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .news-slider {
+        margin-top: 35px;
+    }
+
+    .video-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .plan-item a img {
+        min-height: 205px;
+    }
+
+    .highlights-item {
+        margin: 10px;
+    }
+
+    .accordion-header .accordion-button {
+        font-size: 16px;
+        padding-bottom: 16px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    .accordion-collapse .collapse .show .accordion-body {
+        padding: 0;
+    }
+
+    .investment-item-3 {
+        border-bottom: 1px solid rgba(209, 79, 21, 20%);
+        border-right: 1px solid rgba(209, 79, 21, 20%);
+    }
+
+    .investment-item-4 {
+        border-left: none;
+        border-right: none;
+        /* border-bottom: none; */
+        border-bottom: 1px solid rgba(209, 79, 21, 20%);
+    }
+
+    .investment-item-2 {
+        border-right: none
+    }
+
+    .fa-solid.fa-xmark {
+        right: 20px;
+        top: 20px;
+    }
+
+    .start-info .col-lg-3:nth-child(2):before {
+        display: none;
+    }
+
+    .start-info .col-lg-3:nth-child(1):before {
+        right: -8px;
+        top: 74px;
+    }
+
+    .start-info-span {
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .park-container {
+        margin-bottom: 32px;
+    }
+
+    .send-request {
+        font-size: 15px;
+        padding: 10px 28px 10px 28px;
+    }
+
+    .start-info .col-lg-3:nth-child(1) {
+        border-top: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 20%);
+        font-size: 14px;
+    }
+
+    .start-info .col-lg-3:nth-child(2) {
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 20%);
+        font-size: 14px;
+    }
+
+    .start-info .col-lg-3:nth-child(1) {
+        padding: 16px 10px;
+        font-size: 14px;
+    }
+
+    .start-info .col-lg-3:nth-child(4) {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .start-titles {
+        margin-bottom: 62px;
+        display: none;
+    }
+
+    .image {
+        height: 292px;
+    }
+
+    .start-info .col-lg-3 {
+        font-size: 14px;
+        color: #F9F9F9;
+        line-height: 18px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .houses-container {
+        margin-bottom: 30px;
+        margin-top: 23px;
+    }
+
+    .activities-item {
+        margin: 10px;
+    }
+
+    .send-request {
+        width: 100%;
+    }
+
+    section {
+        margin: 60px 0;
+    }
+
+    .houses img {
+        max-width: 120%;
+        margin-top: 32px;
+        right: 23%;
+        transform: translateX(-100px);
+        width: 144%;
+    }
+
+    .advantages .title-container {
+        display: block;
+    }
+
+    .title-container {
+        display: block;
+    }
+
+
+}
+

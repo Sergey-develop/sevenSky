@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Седьмое небо</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS (jsDelivr CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modals.css">
+    <link rel="stylesheet" href="styles/sliders.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <link rel="stylesheet" href="styles/accordion.css">
+
+    <!-- Slider -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+</head>
+<body>
+
+<header>
+    <nav class="navbar transparent navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="logo" src="images/logo/Logo.png">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active dark-color" aria-current="page" href="#about">О посёлке</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dark-color" href="#lands">Участки</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dark-color" href="#offers">Акции</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dark-color" href="#plan">Генплан</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dark-color" href="#houses">Дома</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link dark-color" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <button class="call-back orange-color show-feedback" type="submit">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="start">
+        <div class="start-dvij">
+
+            <img class="ds-1" alt="" src="images/preview/back.png">
+            <img class="ds-2" alt="" src="images/preview/middle.png">
+            <img class="ds-3" alt="" src="images/preview/front.png">
+
+            <div class="container ds-4">
+                <h1 class="large orange-color h1-desc">Земельные участки</h1>
+            </div>
+
+            <div class="container ds-5">
+                <h1 class="light-color text-center h1-desc">для жизни и отдыха</h1>
+            </div>
+
+            <div class="container ds-6">
+                <div class="start-titles-with-btn h1-desc">
+                    <h1 class="light-color">в Горах Алтая</h1>
+                    <button class="send-request orange-color ml-3 show-feedback" type="submit">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 25px" class="parallax h1-mobile">
+            <img style="height: 104%;" src="images/preview/back.png" alt="img">
+            <div class="container">
+                <h1 class="large orange-color">
+                    Земельные
+                </h1>
+            </div>
+            <div class="container">
+                <h1 style="z-index: 0;position: relative; transform: translateY(-8px);"
+                    class="large orange-color">
+                    участки
+                </h1>
+            </div>
+            <img style="height: 97%;" src="images/preview/middle.png" alt="img">
+            <div class="container">
+                <h1 style="z-index: 5;position: relative;" class="light-color text-center">для жизни</h1>
+            </div>
+            <div class="container">
+                <h1 style="z-index: 8; position: relative;" class="light-color text-center">и отдыха</h1>
+            </div>
+            <img style="height: 83%; width: 150%; z-index: 7;" src="images/preview/front.png" alt="img">
+            <div style="z-index: 8;position: relative;" class="start-titles-with-btn">
+                <div class="container">
+                    <h1 class="light-color">в Горах Алтая</h1>
+                    <button class="send-request orange-color ml-3 show-feedback" type="submit">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+        <div class="row start-info">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                Видовые участки от <span class="start-info-span">2,7</span> млн руб.
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <span class="start-info-span">4,5</span> часа перелёт из Москвы
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <span class="start-info-span">1500</span> га горных рек и кедровых лесов
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                <span class="start-info-span">260</span> солнечных дней в году
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="about">
+        <div class="container">
+            <div class="about">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="about-item">
+                            <h2>
+                                Больше, чем просто посёлок
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-item">
+                            <p class="about-item-text">
+                                Земельные участки на Алтае с фантастическим панорамным видом в окружении горных рек и
+                                кедровых лесов. От 20 соток до 1 гектара. Только вы и дикая природа до самого горизонта,
+                                но со всеми благами цивилизации. Дорога с твёрдым покрытием, собственная ЛЭП,
+                                интернет, охрана.
+                            </p>
+
+                            <form class="d-flex">
+                                <button class="send-request orange-color show-feedback" type="submit">Выбрать участок
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="image">
+            <div class="container h100">
+                <p class="white-color h100 image-item">
+                    Земельные участки Чемал, Чемальский район, урочище Ингурек
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="running">
+            <div class="wrap">
+                <div class="items-wrap">
+                    <div class="items marquee">
+                        <h2 class="item">для жизни</h2>
+                        <h2 class="item orange-color">*</h2>
+                        <h2 class="item">для отдыха</h2>
+                        <h2 class="item orange-color">*</h2>
+                        <h2 class="item">под сдачу</h2>
+                        <h2 class="item orange-color">*</h2>
+                        <h2 class="item">как инвестиция</h2>
+                        <h2 class="item orange-color">*</h2>
+                    </div>
+                    <div aria-hidden="true" class="items marquee">
+                        <h2 class="item">для жизни</h2>
+                        <h2 class="item orange-color">*</h2>
+                        <h2 class="item">для отдыха</h2>
+                        <h2 class="item orange-color">*</h2>
+                        <h2 class="item">под сдачу</h2>
+                        <h2 class="item orange-color">*</h2>
+                        <h2 class="item">как инвестиция</h2>
+                        <h2 class="item orange-color">*</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="highlights">
+                <div class="row highlights-slider">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="highlights-item highlights-item-1 white-color">
+                            <h3>>1250 м</h3>
+                            <p>над уровнем моря</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="highlights-item highlights-item-2 white-color">
+                            <h3>>30 км</h3>
+                            <p>прогулочных маршрутов</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="highlights-item highlights-item-3 white-color">
+                            <h3>>1500 га</h3>
+                            <p>лесов, полей и рек</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="highlights-item highlights-item-4 white-color">
+                            <h3>>100 участков</h3>
+                            <p>нашли своих владельцев</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="lands">
+        <div class="container">
+            <div class="lands">
+
+                <div class="lands-container">
+                    <h2>
+                        Земельные участки на Алтае с панорамным видом
+                    </h2>
+
+                    <p class="h1-desc">
+                        С каждого участка на Седьмом небе открывается потрясающий вид на бескрайние леса, <br/> горные реки,
+                        цветочные луга и величественные горы
+                    </p>
+
+                    <p class="h1-mobile">
+                        С каждого участка на Седьмом небе открывается потрясающий вид на бескрайние леса, горные реки,
+                        цветочные луга и величественные горы
+                    </p>
+                </div>
+
+                <div class="row pan-deck">
+                    <div class="col-lg-4 col-sm-4">
+                        <div class="lands-img-left" style="height: 100%;">
+                            <a href="images/lands/6_lands.webp" data-fancybox="gallery" data-caption="">
+                                <img alt="img" src="images/lands/6_lands.webp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-12 col-xs-6">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-xs-6" style="margin-bottom: 20px">
+                                <div class="row">
+                                    <div class="col-lg-4 col-sm-6 col-xs-6 col-6">
+                                        <a href="images/lands/7_lands.webp" data-fancybox="gallery"
+                                           data-caption="">
+                                            <img alt="img" src="images/lands/7_lands.webp">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-8 col-sm-6 col-xs-6 col-6">
+                                        <a href="images/lands/9_lands.webp" data-fancybox="gallery"
+                                           data-caption="">
+                                            <img alt="img" src="images/lands/9_lands.webp">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-xs-6 col-6">
+                                        <a href="images/lands/8_lands.webp" data-fancybox="gallery"
+                                           data-caption="">
+                                            <img alt="img" src="images/lands/8_lands.webp">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-xs-6 col-6">
+                                        <a href="images/lands/10_lands.webp" data-fancybox="gallery"
+                                           data-caption="">
+                                            <img alt="img" src="images/lands/10_lands.webp">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-pan">
+                    <div class="p">
+                        <a href="images/lands/6_lands.webp" data-fancybox="gallery1"
+                           data-caption="">
+                            <img alt="" src="images/lands/6_lands.webp">
+                        </a>
+                    </div>
+
+                    <div class="qa">
+                        <a href="images/lands/7_lands.webp" data-fancybox="gallery1"
+                           data-caption="">
+                            <img alt="" src="images/lands/7_lands.webp">
+                        </a>
+                    </div>
+
+                    <div class="w">
+                        <a href="images/lands/8_lands.webp" data-fancybox="gallery1"
+                           data-caption="">
+                            <img alt="" src="images/lands/8_lands.webp">
+                        </a>
+                    </div>
+
+                    <div class="e">
+                        <a href="images/lands/9_lands.webp" data-fancybox="gallery1"
+                           data-caption="">
+                            <img alt="" src="images/lands/9_lands.webp">
+                        </a>
+                    </div>
+
+                    <div class="tg">
+                        <a href="images/lands/10_lands.webp" data-fancybox="gallery1"
+                           data-caption="">
+                            <img alt="" src="images/lands/10_lands.webp">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="advantages">
+            <div class="container">
+                <div class="title-container">
+                    <h2>
+                        Преимущества жизни на Седьмом небе
+                    </h2>
+
+                    <button class="send-request show-feedback desc-btn">Узнать подробнее</button>
+                </div>
+
+                <div class="table-page">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Участки в эко-посёлке «Седьмое небо»</th>
+                            <th scope="col">Участки от 6 соток в населённых пунктах</th>
+                            <th scope="col">Участки от 1 га вне населённых пунктов</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Панорамные виды с участков</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td>
+                                <img alt="img" src="icons/done.webp">
+                                /
+                                <img alt="img" src="icons/block.webp">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Развитая инфраструктура</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Коммуникации (электричество, вода, септик)</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Соотношение цены и качества земельного участка</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Возможность покупки участка в рассрочку</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Однородное социальное окружение</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Огороженная охраняемая территория</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Собственная служба эксплуатации</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Высокие экологические стандарты жизни</td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                        </tr>
+
+                        <tr>
+                            <td>Единение с природой</td>
+                            <td class="td"><img alt="img" src="icons/done.webp"></td>
+                            <td><img alt="img" src="icons/block.webp"></td>
+                            <td><img alt="img" src="icons/done.webp"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <button class="send-request show-feedback mobile-btn">Узнать подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="lakes">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="lakes-item">
+                            <h2>
+                                Каракольские озёра
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="lakes-item">
+                            <p>
+                                Крупнейший в Сибири современный природный парк «Каракольские озёра» расположен рядом с
+                                нашим поселком. Запуск проекта планируется до 2027 г. Десятки трасс, подъёмники, прокат
+                                оборудования, магазины и рестораны... и всё это рядом. Подробнее о проекте в
+                                <a href="https://www.kommersant.ru/doc/4712982" target="_blank">Коммерсантъ.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="image-second">
+            <img alt="img" src="images/image.jpg">
+        </div>
+    </section>
+
+    <section id="offers">
+        <div class="container">
+            <div class="offers">
+
+                <div class="title-container">
+                    <h2>Акции</h2>
+                    <button class="send-request show-feedback desc-btn">Узнать подробнее</button>
+                </div>
+
+                <div class="row offers-body">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="offers-img">
+                            <img alt="img" src="images/offers/1_offers.webp">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-6">
+                        <div class="accordion" id="accordionExampleOffers">
+                            <div class="accordion-item" style="border-bottom: 1px solid rgba(209, 79, 21, 20%)">
+                                <h2 class="accordion-header" id="headingOneOffers">
+                                    <button class="accordion-button first-acc" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOneOffers" aria-expanded="true"
+                                            aria-controls="collapseOneOffers"
+                                            data-img-src="images/offers/1_offers.webp">
+                                        Газификация в подарок
+                                    </button>
+                                </h2>
+                                <div id="collapseOneOffers" class="accordion-collapse collapse show"
+                                     aria-labelledby="headingOneOffers"
+                                     data-bs-parent="#accordionExampleOffers">
+
+                                    <div class="accordion-body">
+                                        <p>
+                                            При покупке абсолютно любого участка — газификация в подарок. Предложение
+                                            действительно при условии полной оплаты стоимости земельного участка.
+                                            Подробности предложения уточняйте у менеджера отдела продаж.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item" style="border-bottom: 1px solid rgba(209, 79, 21, 20%)">
+                                <h2 class="accordion-header" id="headingTwoOffers">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwoOffers" aria-expanded="false"
+                                            aria-controls="collapseTwoOffers"
+                                            data-img-src="images/offers/2_offers.webp">
+                                        Рассрочка
+                                    </button>
+                                </h2>
+                                <div id="collapseTwoOffers" class="accordion-collapse collapse"
+                                     aria-labelledby="headingTwoOffers"
+                                     data-bs-parent="#accordionExampleOffers">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Земельные участки в горном Алтае на Седьмом небе в рассрочку без процентов и
+                                            переплат. Подробности предложения уточняйте у менеджера отдела продаж. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThreeOffers">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThreeOffers" aria-expanded="false"
+                                            aria-controls="collapseThreeOffers"
+                                            data-img-src="images/offers/3_offers.webp">
+                                        Приведи друга
+                                    </button>
+                                </h2>
+                                <div id="collapseThreeOffers" class="accordion-collapse collapse"
+                                     aria-labelledby="headingThreeOffers"
+                                     data-bs-parent="#accordionExampleOffers">
+                                    <div class="accordion-body">
+                                        <p>
+                                            За каждую успешную рекомендацию вы получите 100 000 рублей. А ваши друзья —
+                                            дополнительную скидку 3% на приобретение участка. Подробности предложения
+                                            уточняйте у менеджера отдела продаж.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="send-request show-feedback mobile-btn">Узнать подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="infrastructure">
+            <div class="container">
+                <h2 class="white-color">
+                    Инвестиции в недвижимость выгоднее, чем в Сочи
+                </h2>
+
+                <div class="row infrastructure-body">
+                    <div class="col-lg-6">
+                        <div class="infrastructure-item">
+                            <p>
+                                Горный Алтай сейчас — это «Русские Альпы» без виз и санкций с ежедневными прямыми
+                                рейсами из Москвы. По чистоте воздуха Алтай — один из МИРОВЫХ лидеров.
+                            </p>
+
+                            <p>
+                                Государство активно вкладывает деньги в регион. Развивается инфраструктура, строятся
+                                курорты («Манжерок», Altay Resort), дороги. А поэтому — недвижимость дорожает и будет
+                                дорожать.
+                            </p>
+
+                            <p>
+                                «Седьмое небо» — альпийский посёлок в Алтайских горах. На территории 1 500 га всего 500
+                                участков в окружении горных рек и кедровых лесов. Собственниками участков в эко-посёлке
+                                уже стали десятки знаменитостей и бизнесменов из списка Forbes. Цены на Седьмом небе
+                                растут почти на 100% в год. Вложиться сейчас — всё равно, что купить землю в Сочи перед
+                                Олимпиадой.
+                            </p>
+
+                            <p>
+                                Важно упомянуть, что на вторичном рынке участки на Седьмом небе не представлены. Люди
+                                покупают, видят рост цен и продавать не хотят.
+                            </p>
+
+                            <p>
+                                Поэтому «Седьмое небо» сейчас — одно из самых перспективных направлений в недвижимости
+                                Горного Алтая. О том, куда вложить деньги выгодно, можно прочитать на сайтах <a
+                                    target="_blank"
+                                    href="https://www.forbes.ru/spetsproekt/500214-investicii-v-uedinenie-gde-sozdavat-novuu-nedvizimost-dla-otdyha?erid=4CQwVszH9pWuJkejyQa">Forbes</a>
+                                и
+                                <a target="_blank"
+                                   href="https://www.kommersant.ru/doc/6197537?erid=4CQwVszH9pUkpWty9fj">Коммерсантъ</a>.
+                            </p>
+
+                            <button class="send-request show-feedback">Узнать подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="infrastructure-item">
+
+                            <h4 class="infrastructure-item-title">Стоимость одной сотки земли</h4>
+
+                            <img alt="Scheme" src="images/infrastructure/Scheme.webp">
+
+                            <p class="infrastructure-item-link">
+                                Источник: <a target="_blank"
+                                             href="https://www.forbes.ru/spetsproekt/500214-investicii-v-uedinenie-gde-sozdavat-novuu-nedvizimost-dla-otdyha?erid=4CQwVszH9pWuJkejyQa">Forbes</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="plan">
+        <div class="container">
+            <div class="plan">
+                <div class="title-container">
+                    <h2>Генплан</h2>
+                    <button class="send-request show-feedback desc-btn">Выбрать участок</button>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-md-8">
+                        <div class="plan-item pic">
+                            <a href="images/plan/plan.jpg" data-fancybox="gallery3" data-caption="Панорама">
+                                <img class="video-img" alt="plan" src="images/plan/plan.jpg">
+                            </a>
+                            <img class="play-pan" alt="" src="images/plan/Vector%20(1).png">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="plan-item video">
+                            <a href="vid/NC_MAP.mp4" data-fancybox="gallery3" data-caption="Панорама">
+                                <img class="video-img" alt="plan" src="images/plan/plan.jpg">
+                            </a>
+                            <img class="play" alt="" src="images/plan/Vector.png">
+
+                            <p class="pan-text white-color">Панорама 360°</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="send-request show-feedback mobile-btn">Выбрать участок</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="houses" id="houses">
+            <img alt="img" src="images/houses/House.webp">
+
+            <div class="container">
+                <div class="title-container">
+                    <div>
+                        <h2>Дома в Горном Алтае</h2>
+                        <p>Купить дом на Алтае или построить по собственному проекту?</p>
+                    </div>
+                    <button class="send-request show-feedback desc-btn">Выбрать участок</button>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6"></div>
+
+                    <div class="col-lg-6">
+                        <div class="row houses-container">
+                            <div class="col-lg-6 col-md-6 col-6 houses-container-item houses-container-item-1">
+                                <p>Строим дома из сибирского <br/> кедра</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-6 houses-container-item houses-container-item-2">
+                                <p>На выбор два десятка проектов площадью от 70 до 400 кв. м</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-6 houses-container-item houses-container-item-3">
+                                <p>Поможем с организацией строительства на участке</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-6 houses-container-item houses-container-item-4">
+                                <p>Экологичные срубы органично вписываются в природный пейзаж</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-6 houses-container-item houses-container-item-5">
+                                <p>Можно предложить свой вариант «идеального дома»*</p>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-6 houses-container-item houses-container-item-6">
+                                <p>
+                                    Делимся проверенным подрядчиком, который сделает всё качественно и в срок — <a
+                                        target="_blank"
+                                        href="https://pozinproject.ru/">Позин Проект</a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <p class="houses-container-text">
+                            *необходимо согласование проекта с главным архитектором посёлка
+                        </p>
+
+                        <button class="send-request show-feedback mobile-btn">Выбрать участок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="rules">
+                <div class="title-container">
+                    <h2>Правила</h2>
+                    <button class="send-request show-rules desc-btn">Узнать правила</button>
+                </div>
+
+                <div class="row rules-slider">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="rules-item">
+                            <img alt="img" src="images/rules/rule-1.webp">
+                            <p>Запрет на «глухие» заборы</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="rules-item">
+                            <img alt="img" src="images/rules/rule-2.webp">
+                            <p>Единая архитектура в стиле классических альпийских шале</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4">
+                        <div class="rules-item">
+                            <img alt="img" src="images/rules/rule-3.webp">
+                            <p>Использование очистных сооружений</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="send-request show-rules mobile-btn">Узнать правила</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="investment">
+
+                <div class="title-container">
+                    <div>
+                        <h2>Инфраструктура</h2>
+                        <p>Чтобы ваше пребывание было максимально удобным, мы развиваем инфраструктуру внутри
+                            посёлка</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 investment-container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-4 col-6 investment-item-1 investment-item">
+                                <img alt="icon" src="icons/investment/investment-1.png">
+                                <h4>Досуговый центр</h4>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-6 investment-item-2 investment-item">
+                                <img alt="icon" src="icons/investment/investment-2.png">
+                                <h4>Магазин</h4>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-6 investment-item-3 investment-item">
+                                <img alt="icon" src="icons/investment/investment-3.png">
+                                <h4>Детская площадка</h4>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-6 investment-item-4 investment-item">
+                                <img alt="icon" src="icons/investment/investment-4.png">
+                                <h4>Гостевые дома</h4>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-6 investment-item-5 investment-item">
+                                <img alt="icon" src="icons/investment/investment-5.png">
+                                <h4>Рыбалка на озере</h4>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-6 investment-item-6 investment-item">
+                                <img alt="icon" src="icons/investment/investment-6.png">
+                                <h4>Ресторан</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="investment-item-map">
+                            <img alt="map" src="images/investment/Map.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="activities">
+
+                <div class="title-container">
+                    <h2>Чем заняться на Седьмом небе</h2>
+                </div>
+
+                <div class="row activities-slider">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/1_activities.webp">
+                            <p>Построить дом своей мечты</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/2_activities.webp">
+                            <p>Восстановить силы вдали от шумного города</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/3_activities.webp">
+                            <p>Показать детям дикую природу</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/4_activities.webp">
+                            <p>Обеспечить семью экологически чистыми продуктами</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/5_activities.webp">
+                            <p>Сходить на охоту и рыбалку</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/6_activities.webp">
+                            <p>Посетить самые красивые места Алтая</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/7_activities.webp">
+                            <p>Заняться треккингом в горах</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="activities-item">
+                            <img alt="img" src="images/activities/8_activities.webp">
+                            <p>Освоить квадроциклы, схегоходы</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="media">
+                <h2>
+                    СМИ о нас
+                </h2>
+
+                <div class="media-slider">
+                    <div class="media-slider-item">
+                        <img alt="img" src="images/media/media-1.webp">
+                        <h4>Инвестиции в уединение: где создавать новую недвижимость для отдыха</h4>
+                        <p>Концепция «комфортного уединения» получает новое развитие на рынке загородной и
+                            рекреационной...</p>
+                        <a target="_blank"
+                           href="https://www.forbes.ru/spetsproekt/500214-investicii-v-uedinenie-gde-sozdavat-novuu-nedvizimost-dla-otdyha?erid=4CQwVszH9pWuJkejyQa">Читать
+                            статью</a>
+                    </div>
+
+                    <div class="media-slider-item">
+                        <img alt="img" src="images/media/media-2.webp">
+
+                        <h4>
+                            Инвестиции в уединение: где создавать новую недвижимость для отдыха
+                        </h4>
+
+                        <p>
+                            Концепция «комфортного уединения» получает новое развитие на рынке загородной и
+                            рекреационной...
+                        </p>
+
+                        <a target="_blank" href="https://www.kommersant.ru/doc/6197537?erid=4CQwVszH9pUkpWty9fj">Читать
+                            статью</a>
+                    </div>
+
+                    <div class="media-slider-item">
+                        <img alt="img" src="images/media/media-3.webp">
+
+                        <h4>
+                            Инвестиции в уединение: где создавать новую недвижимость для отдыха
+                        </h4>
+
+                        <p>
+                            Концепция «комфортного уединения» получает новое развитие на рынке загородной и
+                            рекреационной...
+                        </p>
+
+                        <a target="_blank" href="https://tass.ru/obschestvo/15455283">Читать статью</a>
+                    </div>
+
+                    <div class="media-slider-item">
+                        <img alt="img" src="images/media/media-1.webp">
+                        <h4>Актёр Павел Деревянко показал, где построит дом в Горном Алтае</h4>
+                        <p>Актёр Павел Деревянко, который недавно приобрел земельный участок для строительства своего
+                            дома...</p>
+                        <a target="_blank"
+                           href="https://brl.mk.ru/social/2019/07/03/akter-pavel-derevyanko-pokazal-mesto-gde-budet-stroit-dom-na-altae.html">Читать
+                            статью</a>
+                    </div>
+
+                    <div class="media-slider-item">
+                        <img style="max-width: 11%" alt="img" src="images/media/media-5.png">
+
+                        <h4>
+                            Как это устроено: альтернатива Альпам или эко-посёлок на Алтае
+                        </h4>
+
+                        <p>
+                            Несколько лет назад группа энтузиастов решила создать эко-посёлок в горах Алтая. Поначалу
+                            многим идея казалась...
+                        </p>
+
+                        <a target="_blank"
+                           href="https://news.rambler.ru/other/42399220-kak-eto-ustroeno-alternativa-alpam-ili-eko-poselok-na-altae/">Читать
+                            статью</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="reviews">
+            <div class="container">
+                <h2 class="white-color">Отзывы жителей посёлка</h2>
+
+                <div class="reviews-slider">
+                    <div class="reviews-slider-item">
+                        <img alt="img" src="images/reviews/28_reviews.jpg">
+
+                        <h4 class="reviews-slider-item-title">
+                            Сергей Светлаков
+                        </h4>
+
+                        <p class="reviews-slider-item-role">
+                            (актёр, телеведущий, продюсер, сценарист)
+                        </p>
+
+                        <p class="reviews-slider-item-text">
+                            Объехал самые красивые места Алтая! Когда летал на вертолете на Каракольские озёра, увидел
+                            сверху потрясающий красоты альпийский пейзаж: снежные шапки вершин, зелёные луга и красивые
+                            домики на вершине горы… Решил выяснить, чьи это заливные луга — оказалось поселок называется
+                            Седьмое небо. Побывал там и влюбился в это место с первого взгляда. Купил участок с видами
+                            круче чем в Альпах, буду строить дом мечты!
+                        </p>
+                    </div>
+
+                    <div class="reviews-slider-item">
+                        <img alt="img" src="images/reviews/30_reviews.jpg">
+
+                        <h4 class="reviews-slider-item-title">
+                            Владимир Кристовский
+                        </h4>
+
+                        <p class="reviews-slider-item-role">
+                            (музыкант, солист группы «УмаТурман»)
+                        </p>
+
+                        <p class="reviews-slider-item-text">
+                            Это место невероятно красивое, совершенно дикое и оторванное от цивилизации и ещё, что очень
+                            важно сегодня, с прекрасной экологией. Для тех же, кто любит всякие безобидные мужские
+                            игрушки (квадроцикл, кроссовый мотоцикл, снегоход и пр.), мне кажется, что просто рай
+                            на Земле. Алтай нереально прекрасен — хочется возвращаться на «Седьмое небо» снова и снова!
+                        </p>
+                    </div>
+
+                    <div class="reviews-slider-item">
+                        <img alt="img" src="images/reviews/29_reviews.jpg">
+
+                        <h4 class="reviews-slider-item-title">
+                            Павел Деревянко
+
+                        </h4>
+
+                        <p class="reviews-slider-item-role">
+                            (актёр театра и кино)
+                        </p>
+
+                        <p class="reviews-slider-item-text">
+                            Алтай поразил меня в самое сердце — хочу там бывать теперь как можно чаще! Много мест
+                            красивых посмотрел и выбрал Седьмое небо. Это место абсолютно другое, необыкновенное… Когда
+                            поднялись на самую вершину, сразу понял, что больше искать не буду — всё! Оно! Нашёл! Тут
+                            все участки находятся на вершине горы, и это такие виды, что хочется летать! Словами это
+                            трудно описать... Мне ещё предстоит определиться с проектом — хочу дикий дом из кедра,
+                            чтобы окна «в пол» и камин… В общем, мечты сбываются...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="news">
+
+                <div class="title-container">
+                    <h2>
+                        Новости Седьмого неба
+                    </h2>
+                </div>
+
+
+                <div class="news-slider">
+                    <div class="news-slider-item" data-news-id="1">
+                        <img alt="news" src="images/news/Возведение%20каркаса%20-%2054%20участок.jpg">
+                        <h4>Возведение каркаса - 54 участок</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="2">
+                        <img alt="news" src="images/news/Завершены%20работы%20по%20сборке%20сруба%20бани%20-%20участок%2077.jpg">
+                        <h4>Завершены работы по сборке сруба бани - участок 77</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="3">
+                        <img alt="news" src="images/news/Кровельные%20работы%20-%20участок%2078.jpg">
+                        <h4>Кровельные работы - участок 78</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="4">
+                        <img alt="news" src="images/news/Возведение%20каркаса%20-%20103%20участок.jpg">
+                        <h4>Возведение каркаса - 103 участок</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="5">
+                        <img alt="news" src="images/news/Строительство%20фундамента%20-%20участок%20106.jpg">
+                        <h4>Строительство фундамента - участок 106</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="6">
+                        <img alt="news" src="images/news/Дорога%20на%20Седьмое%20небо.jpg">
+                        <h4>Дорога на Седьмое небо</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="7">
+                        <img alt="news" src="images/news/строительство%20внутрипоселковых%20дорог.jpeg">
+                        <h4>Продолжаются работы по строительству внутрипоселковых дорог</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="8">
+                        <img alt="news" src="images/news/Установка%20ЛЭП.jpg">
+                        <h4>Установка ЛЭП</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="9">
+                        <img alt="news" src="images/news/продолжаются%20работы%20по%20бурению%20скважины.jpg">
+                        <h4>Продолжаются работы по бурению скважин</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="10">
+                        <img alt="news" src="images/news/Внутрипоселковые%20дороги.jpg">
+                        <h4>Внутрипоселковые дороги</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="11">
+                        <img alt="news" src="images/news/Мы%20запустили%20наш%20официальный%20Telegram-канал.jpg">
+                        <h4>Мы в телеграм</h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+
+                    <div class="news-slider-item" data-news-id="12">
+                        <img alt="news" src="images/news/устройство%20подъездной%20дороги.jpg">
+                        <h4>Устройство подъездных дорог к эко-поселку Седьмое небо </h4>
+                        <a class="open-news-modal" href="#">Читать новость</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="park">
+                <div class="row park-container">
+                    <div class="col-lg-6">
+                        <h2>
+                            Кедровый парк
+                        </h2>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <p>
+                            Мы хотели поделиться возможностью насладиться частью Горного Алтая каждому жителю
+                            Московского
+                            региона. Так и возникла идея создания эко-посёлка «Кедровый парк». Уникальный проект
+                            с особой
+                            атмосферой, наполненной настоящим лесом из 10 000 кедров, привезённых из Алтая. На каждом
+                            участке
+                            высаживаются кедры: 1 сотка = 1 кедр. Посмотреть свободные участки и узнать цены можно
+                            по этой <a target="_blank" href="https://taplink.cc/kedrovypark">ссылке.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row kedr-deck">
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12" style="margin-bottom: 20px">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6 col-6">
+                                        <a href="images/park/2_park.jpg" data-fancybox="gallery2"
+                                           data-caption="">
+                                            <img alt="img" src="images/park/2_park.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 col-6">
+                                        <a href="images/park/1_park.jpg" data-fancybox="gallery2"
+                                           data-caption="">
+                                            <img alt="img" src="images/park/1_park.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-lg-8 col-sm-8 col-6">
+                                        <a href="images/park/3_park.jpg" data-fancybox="gallery2"
+                                           data-caption="">
+                                            <img alt="img" src="images/park/3_park.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-4 col-6">
+                                        <a href="images/park/4_park.jpg" data-fancybox="gallery2"
+                                           data-caption="">
+                                            <img alt="img" src="images/park/4_park.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="lands-img-left">
+                            <a href="images/park/5_park.jpg" data-fancybox="gallery2" data-caption="">
+                                <img alt="img" src="images/park/5_park.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-kedr">
+                    <div class="wq">
+                        <a href="images/park/5_park.jpg" data-fancybox="gallery3"
+                           data-caption="">
+                            <img alt="img" src="images/park/5_park.jpg">
+                        </a>
+                    </div>
+
+                    <div class="ewq">
+                        <a href="images/park/4_park.jpg" data-fancybox="gallery3"
+                           data-caption="">
+                            <img alt="img" src="images/park/4_park.jpg">
+                        </a>
+                    </div>
+
+                    <div class="qwe">
+                        <a href="images/park/3_park.jpg" data-fancybox="gallery3"
+                           data-caption="">
+                            <img alt="img" src="images/park/3_park.jpg">
+                        </a>
+                    </div>
+
+                    <div class="weq">
+                        <a href="images/park/2_park.jpg" data-fancybox="gallery3"
+                           data-caption="">
+                            <img alt="img" src="images/park/2_park.jpg">
+                        </a>
+                    </div>
+
+                    <div class="ewqeqw">
+                        <a href="images/park/1_park.jpg" data-fancybox="gallery3"
+                           data-caption="">
+                            <img alt="img" src="images/park/1_park.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="social-programs">
+
+                <div class="title-container">
+                    <h2 class="">Социальные программы</h2>
+                    <button class="send-request show-feedback desc-btn">Узнать подробнее</button>
+                </div>
+                <div class="row social-programs-body">
+                    <div class="col-lg-7">
+                        <div class="accordion" id="accordionExample">
+                            <div style="border-bottom: 1px solid rgba(209, 79, 21, 20%)" class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne"
+                                            data-img-src="images/social-programs/social-1.webp">
+                                        Молитвенный дом
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                     aria-labelledby="headingOne"
+                                     data-bs-parent="#accordionExample">
+
+                                    <div class="accordion-body">
+                                        <p>
+                                            Дорогие друзья, на территории эко-поселка Седьмое небо, находится уникальный
+                                            объект исторического и культурного наследия — Молитвенный дом в урочище
+                                            Ингурек.
+                                        </p>
+
+                                        <p>
+                                            Группа жильцов нашего поселка при поддержке администрации эко-посёлка
+                                            Седьмое небо, выступила с инициативой восстановления этого Молитвенного
+                                            дома, и предлагает всем желающим поучаствовать в восстановлении уникального
+                                            исторического памятника.
+                                        </p>
+
+                                        <p class="green-color">
+                                            Собрано: 1 410 206 р. из 3 280 000 р.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo"
+                                            data-img-src="images/social-programs/social-2.webp">
+                                        Стипендии
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                     data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Мы разработали и запустили на постоянной основе «Стипендиальную программу»,
+                                            целью которой является повышение качества образовательных результатов
+                                            учеников 9-11 классов МОУ «ЧЕМАЛЬСКАЯ СОШ» и МОУ «Эликманарская СОШ».
+                                            Своим примером мы хотим показать подрастающему поколению, что в Республике
+                                            Алтай есть достойные компании, готовые развиваться вместе с регионом,
+                                            поддерживать молодежь и показать, что можно жить и работать с удовольствием,
+                                            не покидая родные сердцу места.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="social-programs-img">
+                            <img alt="img" src="images/social-programs/social-1.webp">
+                        </div>
+                    </div>
+                </div>
+                <button class="send-request show-feedback mobile-btn">Узнать подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="team">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Наша команда</h2>
+                    </div>
+                    <div class="col-lg-6">
+                        Седьмое небо — это не только красивые участки! Это, в первую очередь, команда профессионалов
+                        и единомышленников, живущих мечтой и делающих всё возможное для того, чтобы она стала
+                        реальностью. Познакомьтесь с нашей командой, ответственной за реализацию проекта «Седьмое небо».
+                    </div>
+                </div>
+
+                <div class="team-slider">
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/team-1.webp">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Данила Андреев</h4>
+                                    <p class="team-slider-item-info-role">Руководитель проекта</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Мы вдохновились необыкновенной энергетикой
+                                    Алтая и загорелись идеей создания нового пространства для жизни, сочетающего комфорт
+                                    и архитектурный стиль альпийских поселков с нетронутой природой тайги. Прошли путь
+                                    от концепции до профессиональной девелоперской компании с необходимыми специалистами
+                                    и материальной базой для работы в горах в любое время года. Наслаждаться тем, что
+                                    любишь — это работа мечты!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/team-2.webp">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Роман Кириллов</h4>
+                                    <p class="team-slider-item-info-role">Руководитель отдела продаж</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Для меня это вызов по созданию поселка в горах, единственного в России такого типа.
+                                    Это исключительное место с особенной энергетикой — здесь горная вода чище,
+                                    звуки ярче, а воздух непременно слаще.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/43_team.jpg">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Юлия Пестрикова</h4>
+                                    <p class="team-slider-item-info-role">Экономист, бухгалтер</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Много лет отработав в крупной строительной компании, я даже не думала о смене
+                                    деятельности, но пришло то время, когда захотела все поменять. Когда узнала о
+                                    проекте Седьмое небо, поняла - это мое, так как очень близка концепция поселка.
+                                    После посещения территории поселка Седьмое небо, еще больше уверена в своем выборе,
+                                    потому что это удивительное и поистине потрясающее место!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/team-3.webp">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Марина Шарапова</h4>
+                                    <p class="team-slider-item-info-role">Специалист по снабжению</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Работа в команде позволяет нам учиться на ошибках друг друга. Мои коллеги - это
+                                    профессионалы с опытом работы, неравнодушные к людям, честные и энергичные. Наш
+                                    проект позволит нашим клиентам наслаждаться загородной жизнью в полной мере,
+                                    укрепляя и продлевая себе годы активной жизни!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/45_team.jpg">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Бурдин Алексей</h4>
+                                    <p class="team-slider-item-info-role">Юрист</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    В течение многих лет, ежегодно, посещал Горный Алтай в качестве туриста и каждый раз
+                                    восхищался величием алтайский гор, прозрачностью быстрых рек, чистотой горного
+                                    воздуха, поэтому, без раздумий, принял предложение начать жить и работать на
+                                    территории Республики Алтай. "Седьмое небо" - это впечатляющее сочетание современого
+                                    комфорта и уникальной природной атмосферы. Рад быть частью Команды!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/46_team.jpg">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Нурахметов Ерлан</h4>
+                                    <p class="team-slider-item-info-role">Начальник хозяйственного отдела</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Проект «Седьмое Небо» меня заинтересовал своим масштабом и уникальностью. Таких
+                                    поселений единомышленников в сакральных местах вы не найдёте на всем постсоветском
+                                    пространстве… И я рад быть частью такого проекта.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/47_team.jpg">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Мария Смелая</h4>
+                                    <p class="team-slider-item-info-role">Менеджер проекта</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Данный проект привлек мое внимание тем, что поселок находится вдалеке от населенных
+                                    пунктов. В этом есть его сила и его уникальность. Мощь и величие горных вершин,
+                                    потрясающие закаты и рассветы, звенящая тишина и абсолютная безмятежность... просто
+                                    не могут оставить равнодушными. Один раз побывав на Седьмом небе, хочется приезжать
+                                    туда снова и снова.
+                                    Я рада быть частью команды, которая работает над развитием этого проекта и от всего
+                                    сердца желаю проекту процветания!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/48_team.jpg">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Мокрецова Мария</h4>
+                                    <p class="team-slider-item-info-role">Координатор проекта
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Рай на Земле существует. Вдали от городов и суеты он создан дарить покой, он учит
+                                    быть счастливыми в моменте - прямо здесь и сейчас. Вам стоит лишь раз побывать на
+                                    Алтае, чтобы влюбиться в это состояние.
+                                    Мы искренне верим, что "Седьмое небо" станет для Вас настоящим местом силы и
+                                    вдохновения.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-slider-item">
+                        <div class="team-slider-item-inner">
+                            <div class="team-slider-item-front">
+                                <img alt="img" src="images/team/49_team.jpg">
+                                <div class="team-slider-item-info">
+                                    <h4 class="team-slider-item-info-name">Кристина Музычук</h4>
+                                    <p class="team-slider-item-info-role">Маркетолог</p>
+                                </div>
+                            </div>
+                            <div class="team-slider-item-back">
+                                <p>
+                                    Это время стало для меня бесценным опытом. С самого начала я была поражена тем,
+                                    насколько быстро и эффективно работает наша команда. Каждый день мы сталкиваемся с
+                                    новыми вызовами, которые помогают нам развиваться и расти как профессионалам.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="instagram">
+                <h2>Мы в Instagram*</h2>
+
+                <p>
+                    *принадлежит компании Meta, признанной экстремистской организацией и запрещенной в РФ
+                </p>
+
+                <div class="instagram-slider">
+                    <div class="instagram-slider-item">
+                        <div class="instagram-slider-item-header">
+                            <div class="instagram-slider-item-header-data">
+                                <img alt="logo" src="images/logo/Avatar.jpg">
+
+                                <p class="instagram-slider-item-header-name">
+                                    sedmoeneboaltay
+                                </p>
+                            </div>
+                            <p class="instagram-slider-item-header-date">7 мая 2022 г.</p>
+                        </div>
+
+                        <img class="instagram-slider-img" alt="img" src="images/instagram/insta-4.webp">
+
+                        <div class="instagram-slider-item-bottom-info">
+                            <p>
+                                🌨 В горах Алтая зима всегда снежная. Ежегодно можно слышать сообщения о рекордном
+                                количестве осадков. Неред...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="instagram-slider-item">
+                        <div class="instagram-slider-item-header">
+                            <div class="instagram-slider-item-header-data">
+                                <img alt="logo" src="images/logo/Avatar.jpg">
+
+                                <p class="instagram-slider-item-header-name">
+                                    sedmoeneboaltay
+                                </p>
+                            </div>
+                            <p class="instagram-slider-item-header-date">7 мая 2022 г.</p>
+                        </div>
+
+                        <img class="instagram-slider-img" alt="img" src="images/instagram/insta-5.png">
+
+                        <div class="instagram-slider-item-bottom-info">
+
+                            <p>🌱🌸 С Первым Днем Весны! 🏡 Мы трепетно относимся к архитектурному облику
+                                нашего посёлка, и хотим, чтобы сти...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="instagram-slider-item">
+                        <div class="instagram-slider-item-header">
+                            <div class="instagram-slider-item-header-data">
+                                <img alt="logo" src="images/logo/Avatar.jpg">
+
+                                <p class="instagram-slider-item-header-name">
+                                    sedmoeneboaltay
+                                </p>
+                            </div>
+                            <p class="instagram-slider-item-header-date">7 мая 2022 г.</p>
+                        </div>
+
+                        <img class="instagram-slider-img" alt="img" src="images/reviews/30_reviews.jpg">
+
+                        <div class="instagram-slider-item-bottom-info">
+                            <p>
+                                Отзыв одного из наших резидентов 😍
+                            </p>
+
+                            <p>
+                                Владимир Кристовский
+                                (музыкант, солист группы «УмаТурман»)
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="instagram-slider-item">
+                        <div class="instagram-slider-item-header">
+                            <div class="instagram-slider-item-header-data">
+                                <img alt="logo" src="images/logo/Avatar.jpg">
+
+                                <p class="instagram-slider-item-header-name">
+                                    sedmoeneboaltay
+                                </p>
+                            </div>
+                            <p class="instagram-slider-item-header-date">7 мая 2022 г.</p>
+                        </div>
+
+                        <img class="instagram-slider-img" alt="img" src="images/reviews/29_reviews.jpg">
+
+                        <div class="instagram-slider-item-bottom-info">
+                            <p>
+                                Отзыв нашего клиента 😍
+                            </p>
+
+                            <p>
+                                «Алтай поразил меня в самое сердце — хочу там бывать теперь как можно чащ...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="instagram-slider-item">
+                        <div class="instagram-slider-item-header">
+                            <div class="instagram-slider-item-header-data">
+                                <img alt="logo" src="images/logo/Avatar.jpg">
+
+                                <p class="instagram-slider-item-header-name">
+                                    sedmoeneboaltay
+                                </p>
+                            </div>
+                            <p class="instagram-slider-item-header-date">7 мая 2022 г.</p>
+                        </div>
+
+                        <img class="instagram-slider-img" alt="img" src="images/reviews/28_reviews.jpg">
+
+                        <div class="instagram-slider-item-bottom-info">
+                            <p>
+                                Отзыв одного из наших резидентов 😍
+                            </p>
+
+                            <p>
+                                Владимир Кристовский
+                                (музыкант, солист группы «УмаТурман»)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="contacts" id="contacts">
+        <div class="container">
+            <div class="title-container">
+                <h2 class="white-color">Контакты</h2>
+
+                <button class="send-request show-feedback desc-btn">Оставить заявку</button>
+            </div>
+
+            <div class="row contacts-info">
+                <div class="col-lg-6">
+                    <div class="contacts-item-map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3abbbec22ee3c14293650e4f10f77582e1c6869d0cf469b6281cbf249568b6f2&amp;source=constructor"
+                                width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contacts-item-info">
+                        <div class="contacts-item-info-moscow">
+                            <h4 class="white-color">
+                                Офис в Москве
+                            </h4>
+                            <div class="contacts-item-info-moscow-telephones">
+                                <a href="tel:+78007756007"> 8 800 775-60-07 (звонок по России бесплатный)</a>
+                                <a href="tel:+79268645636"> 8 926 864-56-36 (для звонков из-за рубежа)</a>
+                            </div>
+                            <div class="contacts-item-info-moscow-address">
+                                <p>
+                                    Пресненская наб. д.12, БЦ «Федерация Восток», 80 этаж, офис 8005
+                                </p>
+                            </div>
+                            <div class="contacts-item-info-moscow-mails">
+                                <a href="mailto:pochta@sedmoe.com">pochta@sedmoe.com</a>
+                                <a href="mailto:reklama@sedmoe.com">reklama@sedmoe.com (по вопросам рекламы)</a>
+                            </div>
+                        </div>
+
+                        <div class="contacts-item-info-altai">
+                            <h4 class="white-color">
+                                Офис на Алтае
+                            </h4>
+                            <div class="contacts-item-info-moscow-telephones">
+                                <a href="tel:+78007756007"> 8 800 775-60-07 (звонок по России бесплатный)</a>
+                                <a href="tel:+79268645636"> 8 926 864-56-36 (для звонков из-за рубежа)</a>
+                            </div>
+                            <div class="contacts-item-info-moscow-address">
+                                <p>
+                                    Республика Алтай, Чемальский район, урочище Ингурек
+                                </p>
+
+                                <p>Координаты: 51.530744, 86.258381</p>
+                            </div>
+                            <div class="contacts-item-info-moscow-mails">
+                                <a href="mailto:pochta@sedmoe.com">pochta@sedmoe.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="send-request show-feedback mobile-btn">Оставить заявку</button>
+
+            <div class="row contacts-bottom-info">
+                <p class="col-lg-6">
+                    Материалы на данном сайте носят информационный характер и не являются публичной офертой,
+                    определяемой положениями статьи 437 Гражданского кодекса РФ.
+                </p>
+
+                <div class="col-lg-6">
+                    <p class="politic">Политика конфиденциальности</p>
+                    <p>© Все права принадлежат ООО «Эко-поселок Седьмое Небо» 2017-2024 г.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+<div class="modal-rules">
+
+    <i class="fa-solid fa-xmark close-rules-modal"></i>
+
+    <h3>Правила</h3>
+    <p>
+        Комфорт жизни, цены на недвижимость и её ликвидность определяются не только параметрами
+        вашего личного дома и участка, но и общей атмосферой и красотой «Седьмого неба».
+        Поэтому в посёлке действуют обязательные правила, поддержанные всеми владельцами земельных участков.
+    </p>
+
+    <p>
+        Прозрачные деревянные ограждения в стиле «ранчо».
+        Такие заборы обходятся намного дешевле «глухих» вариантов.
+        Важный фактор, учитывая размеры участков на Седьмом небе.
+    </p>
+
+    <p>
+        Живые изгороди обеспечат максимальное уединение и отсутствие визуального контакта с соседями.
+        Собственный питомник «Седьмого неба» бесплатно предоставит саженцы кедров и других деревьев
+        (оплачивается только работа по пересадке).
+    </p>
+
+    <p>
+        Согласование проекта дома с главным архитектором посёлка.
+        Мы продаём участки без подряда, т. е. покупатель вправе строить дом
+        самостоятельно или силами сторонней организации. Но любое новое строение должно
+        органично вписываться в общий стиль посёлка и окружающую природу (хвойная тайга).
+    </p>
+
+    <p>
+        Покупая участок на Седьмом небе любой человек твёрдо знает — будущие
+        соседские дома не испортят вид и стиль посёлка. А уродливые дворцы в стиле
+        «дорого-богато» из 90-х оставим московской Рублёвке.
+    </p>
+
+    <p>
+        Установка современных септиков с высокой степенью очистки.
+        Очистные сооружения последнего поколения с активным нагнетанием кислорода позволяют
+        получать на выходе практически чистую «техническую» воду, сброс которой в почву не
+        наносит ущерба окружающей среде. Именно такие септики устанавливаются на территории
+        «Седьмого неба». Стоимость обустройства автономной канализации при помощи таких септиков
+        в нашем поселке на 30% ниже, чем в среднем по региону.
+    </p>
+
+    <p>
+        Наш проект буквально притягивает адекватных и добрых людей.
+        Ещё на старте без какой-либо «фильтрации» в посёлке сформировалось
+        устойчивое позитивное сообщество людей, разделяющих общие ценности — любовь
+        к природе и уважение друг к другу.
+    </p>
+
+    <p>
+        Мы хотим сохранить эту тенденцию — а потому
+        оставляем за собой право отказать в приобретении участка
+        или дома на любой стадии до подписания договора купли-продажи.
+    </p>
+</div>
+
+<div class="news-modal">
+    <i class="fa-solid fa-xmark close-news-modal"></i>
+    <h3 class="news-modal-title"></h3>
+    <p class="news-modal-date"></p>
+    <p class="news-modal-content"></p>
+    <p class="news-modal-contact"></p>
+</div>
+
+<div class="feedback-modal">
+    <i class="fa-solid fa-xmark close-feedback-modal"></i>
+
+    <h3>
+        Узнайте подробнее о наших предложениях
+    </h3>
+
+    <p>
+        Оставьте свои контактные данные, и мы вам перезвоним с 9 до 18 часов по вашему местному времени
+    </p>
+
+    <form id="form">
+        <input type="text" id="name" placeholder="Имя">
+        <input type="tel" id="phone" placeholder="Телефон">
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="city" placeholder="Город">
+
+        <input type="checkbox" id="agree" required> <!-- Поменяйте порядок здесь -->
+        <label for="agree" class="custom-checkbox"></label>
+        <span>Я соглашаюсь с <a target="_blank" href="#">политикой конфиденциальности</a> и с <a
+                target="_blank" href="#">обработкой персональных данных</a></span>
+
+        <button type="submit" class="send-request form-btn">Отправить</button>
+    </form>
+
+    <div id="error-msg"></div>
+    <div id="success-msg"></div>
+</div>
+<div class="modal-overlay"></div>
+
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+
+<!-- slick -->
+<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- scripts -->
+<script src="scripts/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        //
+    });
+
+    Fancybox.bind('[data-fancybox="gallery1"]', {
+        //
+    });
+
+    Fancybox.bind('[data-fancybox="gallery2"]', {
+        //
+    });
+
+    Fancybox.bind('[data-fancybox="gallery3"]', {
+        //
+    });
+
+    Fancybox.bind('[data-fancybox="gallery4"]', {
+        //
+    });
+</script>
+
+</body>
+</html>

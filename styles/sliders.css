@@ -1,0 +1,392 @@
+.media-slider .fas.fa-arrow-left.slick-arrow {
+    position: absolute;
+    right: 80px;
+    font-size: 40px;
+    top: -60px;
+    z-index: 99;
+    color: #D14F15;
+}
+.media-slider .fas.fa-arrow-left.slick-arrow.slick-disabled  {
+    opacity: 40%;
+}
+.media-slider .fas.fa-arrow-right.slick-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: -60px;
+    right: 10px;
+    z-index: 99;
+    color: #D14F15;
+}
+.media-slider .fas.fa-arrow-right.slick-arrow.slick-disabled  {
+    opacity: 40%;
+}
+.media-slider .slick-slide {
+    margin: 0 12px;
+}
+.media {
+    .custom-prev.slick-arrow {
+        position: absolute;
+        right: 75px;
+        top: -50px;
+        transform: rotate(180deg);
+        z-index: 199;
+    }
+    .custom-next.slick-arrow {
+        position: absolute;
+        right: 25px;
+        top: -50px;
+        z-index: 199;
+    }
+}
+
+
+.reviews-slider .fas.fa-arrow-right.slick-arrow.slick-disabled  {
+    opacity: 40%;
+}
+.reviews-slider .fas.fa-arrow-left.slick-arrow {
+    position: absolute;
+    right: 80px;
+    font-size: 40px;
+    top: -117px;
+    z-index: 99;
+    color: #D14F15;
+}
+.reviews-slider .fas.fa-arrow-right.slick-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: -117px;
+    right: 10px;
+    z-index: 99;
+    color: #D14F15;
+}
+.reviews-slider .fas.fa-arrow-left.slick-arrow.slick-disabled  {
+    opacity: 40%;
+}
+.reviews-slider .slick-slide {
+    margin: 0 12px;
+}
+.reviews {
+    .custom-prev.slick-arrow {
+        position: absolute;
+        right: 75px;
+        top: -115px;
+        transform: rotate(180deg);
+    }
+    .custom-next.slick-arrow {
+        position: absolute;
+        right: 25px;
+        top: -115px;
+    }
+}
+.reviews-slider {
+    margin-top: 62px;
+}
+
+.news-slider .fas.fa-arrow-left.slick-arrow {
+    position: absolute;
+    right: 80px;
+    font-size: 40px;
+    top: -60px;
+    z-index: 99;
+    color: #D14F15;
+}
+.news-slider .fas.fa-arrow-right.slick-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: -60px;
+    right: 10px;
+    z-index: 99;
+    color: #D14F15;
+}
+.news-slider .slick-slide {
+    margin: 0 12px;
+}
+.news {
+    .custom-prev.slick-arrow {
+        position: absolute;
+        right: 55px;
+        top: -105px;
+        transform: rotate(180deg);
+    }
+    .custom-next.slick-arrow {
+        position: absolute;
+        right: 0;
+        top: -105px;
+    }
+}
+
+.team-slider .fas.fa-arrow-left.slick-arrow {
+    position: absolute;
+    left: 10px;
+    font-size: 40px;
+    top: -60px;
+    z-index: 99;
+    color: #D14F15;
+}
+.team-slider .fas.fa-arrow-left.slick-arrow.slick-disabled  {
+    opacity: 40%;
+}
+.team-slider .fas.fa-arrow-right.slick-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: -60px;
+    left: 80px;
+    z-index: 99;
+    color: #D14F15;
+}
+.team-slider .fas.fa-arrow-right.slick-arrow.slick-disabled  {
+    opacity: 40%;
+}
+.team-slider .slick-slide {
+    margin: 0 12px;
+}
+.team-slider-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.team-slider {
+    margin-top: 64px;
+}
+.team {
+    .team-slider {
+        .custom-prev.slick-arrow {
+            position: absolute;
+            top: -93px;
+            left: 6px;
+            transform: rotate(180deg);
+            width: 30px;
+        }
+        .custom-next.slick-arrow {
+            position: absolute;
+            top: -93px;
+            left: 77px;
+            width: 30px;
+        }
+    }
+}
+
+.instagram-slider .fas.fa-arrow-left.slick-arrow {
+    position: absolute;
+    right: 80px;
+    font-size: 40px;
+    top: -147px;
+    z-index: 99;
+    color: #D14F15;
+}
+.instagram-slider .fas.fa-arrow-right.slick-arrow.slick-disabled  {
+    opacity: 40%;
+}
+.instagram-slider .fas.fa-arrow-right.slick-arrow {
+    position: absolute;
+    font-size: 40px;
+    top: -147px;
+    right: 10px;
+    z-index: 99;
+    color: #D14F15;
+}
+.instagram-slider .fas.fa-arrow-left.slick-arrow.slick-disabled {
+    opacity: 40%;
+}
+
+.highlights-slider .slick-slide {
+    margin: 0 12px;
+}
+
+.instagram-slider .slick-slide {
+    margin: 0 12px;
+}
+.instagram-slider {
+    margin-top: 64px;
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
+.custom-prev, .custom-next {
+    display: block !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.custom-prev img, .custom-next img {
+    width: 30px;
+    height: auto;
+}
+
+.custom-prev.slick-arrow {
+    position: absolute;
+    right: 75px;
+    top: -175px;
+    transform: rotate(180deg);
+}
+.custom-next.slick-arrow {
+    position: absolute;
+    right: 25px;
+    top: -175px;
+}
+
+.custom-prev.slick-arrow.slick-disabled {
+    opacity: 40%;
+ }
+.custom-next.slick-arrow.slick-disabled {
+    opacity: 40%;
+ }
+
+@media screen and (max-width: 768px) {
+    .highlights-slider .slick-slide {
+        margin: 0;
+    }
+
+    .media-slider .slick-slide {
+        margin: 0;
+    }
+
+    .reviews-slider .slick-slide {
+        margin: 0;
+    }
+
+    .news-slider .slick-slide {
+        margin: 0;
+    }
+
+    .team-slider .slick-slide {
+        margin: 0;
+    }
+
+    .instagram-slider .slick-slide {
+        margin: 0;
+    }
+
+    .reviews {
+        .reviews-slider {
+            .custom-prev.slick-arrow {
+                position: absolute;
+                right: 35px;
+                top: -40px;
+                transform: rotate(180deg);
+            }
+            .custom-next.slick-arrow {
+                position: absolute;
+                right: 0;
+                top: -40px;
+            }
+        }
+
+    }
+
+    .instagram {
+        .custom-prev.slick-arrow {
+            position: absolute;
+            right: 35px;
+            top: -30px;
+            transform: rotate(180deg);
+        }
+        .custom-next.slick-arrow {
+            position: absolute;
+            right: 0;
+            top: -30px;
+        }
+    }
+
+    .news {
+        .custom-prev.slick-arrow {
+            position: absolute;
+            right: 35px;
+            top: -35px;
+            transform: rotate(180deg);
+        }
+        .custom-next.slick-arrow {
+            position: absolute;
+            right: 0;
+            top: -35px;
+        }
+    }
+
+    .team {
+        .team-slider {
+            .custom-prev.slick-arrow {
+                position: absolute;
+                right: 35px;
+                top: -40px;
+                transform: rotate(180deg);
+                width: 30px;
+                left: auto;
+            }
+            .custom-next.slick-arrow {
+                position: absolute;
+                right: 12px;
+                top: -40px;
+                width: 30px;
+                left: auto;
+            }
+        }
+    }
+
+    .media {
+        .media-slider {
+            .custom-prev.slick-arrow {
+                position: absolute;
+                right: 35px;
+                top: 15px;
+                transform: rotate(180deg);
+            }
+            .custom-next.slick-arrow {
+                position: absolute;
+                right: 0;
+                top: 15px;
+            }
+        }
+
+    }
+
+    .highlights {
+        .custom-prev.slick-arrow {
+            position: absolute;
+            top: -40px;
+            transform: rotate(180deg);
+            width: 30px;
+            right: 41px;
+        }
+        .custom-next.slick-arrow {
+            position: absolute;
+            top: -40px;
+            width: 30px;
+            right: 30px;
+        }
+    }
+
+    .activities {
+        .custom-prev.slick-arrow {
+            position: absolute;
+            top: -20px;
+            transform: rotate(180deg);
+            width: 30px;
+            right: 40px;
+
+        }
+        .custom-next.slick-arrow {
+            position: absolute;
+            top: -20px;
+            width: 30px;
+            right: 30px;
+        }
+    }
+
+    .rules {
+        .custom-prev.slick-arrow {
+            position: absolute;
+            top: -20px;
+            transform: rotate(180deg);
+            width: 30px;
+            right: 40px;
+
+        }
+        .custom-next.slick-arrow {
+            position: absolute;
+            top: -20px;
+            width: 30px;
+            right: 30px;
+        }
+    }
+}
