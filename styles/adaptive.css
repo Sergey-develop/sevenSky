@@ -661,6 +661,10 @@
 
 
 @media screen and (max-width: 500px) {
+    .hidden {
+        visibility: hidden;
+    }
+
     .news-slider {
         margin-top: 35px;
     }

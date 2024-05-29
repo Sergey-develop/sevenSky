@@ -148,8 +148,10 @@ p {
     padding: 9px 28px 9px 28px;
     gap: 10px;
     border-radius: 100px;
-    border: 1px solid #D14F15;
+    border: 1px solid black;
     background: transparent;
+    color: black;
+    font-weight: 300;
 }
 .call-back:hover {
     background: rgba(244, 116, 59, 20%)
@@ -194,18 +196,18 @@ p {
     color: #091B07;
 }
 header {
-    background: linear-gradient(to right, #FFE4BB 100%, #D14F15 100%);
+    background-image: url("../images/3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /*NAV*/
 
 /*PREVIEW*/
 
 .preview {
-    background: linear-gradient(to right, #FFE4BB 100%, #D14F15 100%);
 }
 .start {
     position: relative;
-    background: linear-gradient(to right, rgb(255, 228, 187) 100%, rgb(209, 79, 21) 100%);
     overflow: hidden;
 }
 .start img {
