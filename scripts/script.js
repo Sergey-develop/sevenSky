@@ -1,3 +1,46 @@
+var form = document.querySelector('#form');
+
+form.querySelector('button.send-request').addEventListener('click', function () {
+    // Проверяем валидность формы
+    if (form.querySelector('*:invalid:required')) {
+        // Убираем подсветку валидных
+        form.querySelectorAll('*:valid:required').forEach(function (e) {
+            e.style.borderBottom = '';
+        })
+        // Подсвечиваем невалидные обязательные поля
+        form.querySelectorAll('*:invalid:required').forEach(function (e) {
+            e.style.borderBottom = '2px solid #ce0000';
+        })
+    } else {
+
+        let urlParams = new URLSearchParams(window.location.search)
+
+        $.ajax({
+            url: '/send/sendRequest.php?' + urlParams.toString(),
+            method: 'post',
+            data: {
+                name: form.querySelector('input#name').value,
+                email: form.querySelector('input#email').value,
+                phone: form.querySelector('input#phone').value,
+                city: form.querySelector('input#city').value,
+                referrer: document.referrer
+            },
+            success: function (data) {
+                res = JSON.parse(data);
+                console.log(res);
+
+                if (res.result) {
+                    form.innerHTML = '<h3>Спасибо за проявленный интерес!</h3><p> В ближайшее время менеджер с вами свяжется.</p>';
+                } else {
+                    form.innerHTML = '<h3 style="color:red">Ошибка в отправке!</h3><p>В ходе отправки данных возникла ошибка. Проверьте правильность заполненных данных и попробуйте снова</p>';
+                }
+            }
+        });
+
+    }
+});
+
+
 let closeButton = document.querySelector('.close-news-modal');
 let modal = document.querySelector('.news-modal');
 let modalOverlay = document.querySelector('.modal-overlay');
@@ -68,74 +111,46 @@ readButtonsFeedback.forEach(function (button) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const accordionButtons = document.querySelectorAll('.accordion-button');
-    const imgContainer = document.querySelector('.social-programs-img img');
+    // Логика для первого аккордеона (Социальные программы)
+    const socialAccordionButtons = document.querySelectorAll('#accordionSocialPrograms .accordion-button');
+    const socialImgContainer = document.querySelector('.social-programs-img img');
 
-    accordionButtons.forEach(button => {
+    socialAccordionButtons.forEach(button => {
         button.addEventListener('click', function () {
-            const isOpen = button.getAttribute('aria-expanded') === 'true';
-            const imgSrc = button.dataset.imgSrc;
+            setTimeout(() => {
+                const isOpen = button.getAttribute('aria-expanded') === 'true';
+                const imgSrc = button.dataset.imgSrc;
 
-            if (isOpen) {
-                imgContainer.src = imgSrc;
-            }
+                if (isOpen) {
+                    socialImgContainer.src = imgSrc;
+                }
+            }, 150); // Подождем немного, чтобы дать браузеру время обновить aria-expanded
+        });
+    });
+
+    // Логика для второго аккордеона (Акции)
+    const offersAccordionButtons = document.querySelectorAll('#accordionOffers .accordion-button');
+    const offersImgContainer = document.querySelector('.offers-img img');
+    const defaultImgSrc = offersImgContainer.src;
+
+    offersAccordionButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            setTimeout(() => {
+                const isOpen = button.getAttribute('aria-expanded') === 'true';
+                const imgSrc = button.dataset.imgSrc;
+
+                if (isOpen) {
+                    offersImgContainer.src = imgSrc;
+                } else {
+                    offersImgContainer.src = defaultImgSrc;
+                }
+            }, 150); // Подождем немного, чтобы дать браузеру время обновить aria-expanded
         });
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const accordionButtons = document.querySelectorAll('.accordion-button');
-    const imgContainer = document.querySelector('.offers-img img');
-    const defaultImgSrc = imgContainer.src;
-
-    accordionButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            const isOpen = button.getAttribute('aria-expanded') === 'true';
-            const imgSrc = button.dataset.imgSrc;
-
-            if (isOpen) {
-                imgContainer.src = imgSrc;
-            } else {
-                imgContainer.src = defaultImgSrc;
-            }
-        });
-    });
-});
-
-document.getElementById('form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form submission
-
-    var name = document.getElementById('name').value.trim();
-    var phone = document.getElementById('phone').value.trim();
-    var email = document.getElementById('email').value.trim();
-    var city = document.getElementById('city').value.trim();
-    var agree = document.getElementById('agree').checked;
-    var errorMsg = document.getElementById('error-msg');
-    var successMsg = document.getElementById('success-msg'); // Добавлено
-
-    if (name === '' || phone === '' || email === '' || city === '') {
-        errorMsg.textContent = 'Пожалуйста, заполните все поля.';
-        return;
-    }
-
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        errorMsg.textContent = 'Пожалуйста, введите корректный email.';
-        return;
-    }
-
-    if (!agree) {
-        errorMsg.textContent = 'Пожалуйста, согласитесь с политикой конфиденциальности и обработкой персональных данных.';
-        return;
-    }
 
 
-    errorMsg.textContent = '';
-
-    successMsg.textContent = 'Форма успешно отправлена';
-    successMsg.style.color = 'green';
-
-});
 
 document.addEventListener('DOMContentLoaded', function () {
     const newsData = [
@@ -191,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function () {
             id: 4,
             title: "Возведение каркаса - 103 участок",
             date: "10.09.2022",
-            content: `На Седьмом небе работа идёт полным ходом. 
+            content: `На Седьмом небе работа идёт полным ходом.
 
 На 103 участке приступили к возведению каркаса.
 
@@ -221,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
             date: "15.09.2022",
             content: `Уважаемые клиенты!
 
-Сейчас дорога только строится, до конца года планируют сделать качественную грунтовку и частично заасфальтировать. 
+Сейчас дорога только строится, до конца года планируют сделать качественную грунтовку и частично заасфальтировать.
 
 Важно! До окончания строительства новой дороги проехать на Седьмое небо можно только на внедорожнике. Также владельцы участков и гости посёлка всегда могут воспользоваться нашим трансфером - это новые, комфортные внедорожники с кондиционером. Машины ходят на Седьмое небо ежедневно.`,
             contact: ""
@@ -341,8 +356,8 @@ function mobileOnlySlider() {
                 breakpoint: 769,
                 settings: {
                     arrows: true,
-                    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-                    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
+                    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+                    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
                 }
             }
         ]
@@ -358,8 +373,8 @@ function mobileOnlySlider() {
                 breakpoint: 769,
                 settings: {
                     arrows: true,
-                    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-                    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
+                    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+                    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
                 }
             }
         ]
@@ -377,8 +392,8 @@ function mobileOnlySlider() {
                 breakpoint: 768,
                 settings: {
                     arrows: true,
-                    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-                    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
+                    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+                    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
                 }
             },
         ]
@@ -405,14 +420,37 @@ $(window).resize(function (e) {
 });
 
 
+$('.team-slider').slick({
+    dots: false,
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+        }
+    ]
+});
 $('.media-slider').slick({
     dots: false,
     infinite: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
+    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
     responsive: [
         {
             breakpoint: 1200,
@@ -434,8 +472,8 @@ $('.reviews-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
+    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
     responsive: [
         {
             breakpoint: 1200,
@@ -457,31 +495,8 @@ $('.news-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
-    responsive: [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 2,
-            }
-        },
-        {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
-});
-$('.team-slider').slick({
-    dots: false,
-    infinite: false,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
+    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
     responsive: [
         {
             breakpoint: 1200,
@@ -503,8 +518,8 @@ $('.instagram-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<button type="button" class="custom-prev"><img src="../icons/Frame.png" alt="Previous" /></button>',
-    nextArrow: '<button type="button" class="custom-next"><img src="../icons/Frame.png" alt="Next" /></button>',
+    prevArrow: '<button type="button" class="custom-prev"><img src="icons/Frame.png" alt="Previous" /></button>',
+    nextArrow: '<button type="button" class="custom-next"><img src="icons/Frame.png" alt="Next" /></button>',
     responsive: [
         {
             breakpoint: 1200,
